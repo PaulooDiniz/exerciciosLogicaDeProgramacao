@@ -1,0 +1,22 @@
+Algoritmo "duracao"
+
+Var
+
+horas, minutos, segundos : inteiro
+
+Inicio
+
+escreval("Digite a duração em segundos")
+leia(segundos)
+
+se segundos >= 3600 entao
+   horas <- segundos \ 3600
+   segundos <- segundos - horas * 3600
+fimse
+
+minutos <- segundos \ 60
+segundos <- segundos - minutos * 60
+
+escreval(horas,":",minutos,":",segundos)
+
+Fimalgoritmo
