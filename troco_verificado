@@ -1,0 +1,27 @@
+Algoritmo "troco_verificado"
+
+Var
+
+preco, dinheiro : real
+unidade : inteiro
+
+Inicio
+
+escreval("Preço unitário do produto: ")
+leia(preco)
+escreval("Quantidade comprada: ")
+leia(unidade)
+escreval("Dinheiro recebido: ")
+leia(dinheiro)
+
+preco <- preco * unidade
+
+se dinheiro >= preco entao
+   dinheiro <- dinheiro - preco
+   escreval("TROCO = ", dinheiro:5:2)
+senao
+     preco <- preco - dinheiro
+     escreval("DINHEIRO INSUFICIENTE, FALTAM ", preco:5:2 ," REAIS")
+fimse
+
+Fimalgoritmo
