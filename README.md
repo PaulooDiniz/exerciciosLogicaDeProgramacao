@@ -1,2 +1,2 @@
 # exerciciosLogicaDeProgramacao
- exercicios de portugol feitos na Udemy
+ Exercícios de portugol
