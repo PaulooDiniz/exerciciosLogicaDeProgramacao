@@ -1,0 +1,19 @@
+Algoritmo "multiplo"
+
+Var
+
+number1, number2, multiplo : inteiro
+
+Inicio
+
+escreval("Digite dois números inteiros: ")
+leia(number1)
+leia(number2)
+
+se (number1 mod number2 = 0) ou (number2 mod number1 = 0) entao
+   escreval("SÃO MULTIPLOS")
+senao
+   escreval("NÃO SÃO MULTIPLOS")
+fimse
+
+Fimalgoritmo
