@@ -1,0 +1,38 @@
+Algoritmo "media_idades"
+
+Var
+
+idade, contador : inteiro
+media : real
+
+Inicio
+
+contador <- 0
+media <- 0
+
+enquanto contador >= 0 faca
+
+         escreval("Digite as idades:")
+         leia(idade)
+         
+         se (contador = 0) e (idade < 0) entao
+            escreval("IMPOSSÍVEL CALCULAR!")
+            contador <- -1
+         senao
+              se idade >= 0 entao
+                 media <- media + idade
+                 contador <- contador + 1
+              senao
+                   se idade < 0 entao
+                      media <- media / contador
+                      escreval("MÉDIA ", media:4:2)
+                      contador <- -1
+                   fimse
+              fimse
+         fimse
+fimenquanto
+         
+
+            
+
+Fimalgoritmo
