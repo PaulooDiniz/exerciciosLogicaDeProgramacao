@@ -1,0 +1,26 @@
+Algoritmo "senha_fixa"
+
+Var
+
+senha, acesso: caractere
+
+Inicio
+
+acesso <- "false"
+
+repita
+
+   escreval("Digite a senha: ")
+   leia(senha)
+
+      se senha = "2002" entao
+         acesso <- "true"
+         escreval("Acesso permitido!")
+      senao
+           escreval("Senha inválida! Tente novamente")
+      fimse
+      
+ate acesso = "true"
+
+
+Fimalgoritmo
