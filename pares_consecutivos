@@ -1,0 +1,34 @@
+Algoritmo "pares_consecutivos"
+
+Var
+
+soma, x, i : inteiro
+
+Inicio
+
+repita
+
+      i <- 1
+      soma <- 0
+
+      escreval("Digite um número inteiro: ")
+      leia(x)
+      
+      se (x % 2 <> 0) e (x <> 0) entao
+         x <- x + 1
+      fimse
+      
+            se x <> 0 entao
+              para i de 1 ate 5 faca
+                   escreval("# ", x)
+                   soma <- soma + x
+                   x <- x + 2
+              fimpara
+              
+              escreval("SOMA = ",soma)
+              
+            fimse
+      
+ate x = 0
+
+Fimalgoritmo
