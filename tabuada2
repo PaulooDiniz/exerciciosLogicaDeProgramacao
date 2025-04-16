@@ -1,0 +1,32 @@
+Algoritmo "tabuada2"
+
+Var
+
+n, mult, i : inteiro
+cont : caractere
+
+Inicio
+
+repita
+
+      escreval("Deseja a tabuada para qual valor: ")
+      leia(n)
+      
+      i <- 1
+      
+      para i de 1 ate 10 faca
+           mult <- n * i
+           escreval(n," X ", i," = ",mult)
+      fimpara
+      
+      escreval("deseja continuar? (s/n)")
+      leia(cont)
+      
+ate cont = "n"
+
+
+
+
+
+
+Fimalgoritmo
