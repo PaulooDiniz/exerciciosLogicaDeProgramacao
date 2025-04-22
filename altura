@@ -1,0 +1,64 @@
+Algoritmo "altura"
+
+Var
+
+nome : vetor [0..10] de caractere
+idade : vetor [0..10] de inteiro
+altura : vetor [1..10] de real
+n, i : inteiro
+mediaAltura, porcentagem : real
+
+Inicio
+
+escreval("Quantas pessoas serão digitadas? ")
+leia(n)
+
+escreval()
+
+       para i de 1 ate n faca
+
+            escreval("Dados da ",i,"a pessoa:")
+            escreva("NOME: ")
+            leia(nome[i])
+            escreva("IDADE: ")
+            leia(idade[i])
+            escreva("ALTURA: ")
+            leia(altura[i])
+            escreval()
+            
+            se i = n entao
+            
+               para i de 1 ate n faca
+               
+                   mediaAltura <- mediaAltura + altura[i]
+
+                   se idade[i] < 16 entao
+
+                      porcentagem <- porcentagem + 1
+
+                   fimse
+                   
+                fimpara
+                
+                porcentagem <- (100 / n) * porcentagem
+                
+                escreval("Altura média: ",mediaAltura / n:4:2)
+                      
+                         escreval("Pessoas com menos de 16 anos: ",porcentagem:4:1,"%")
+                         escreval
+
+                para i de 1 ate n faca
+                
+                     se idade[i] < 16 entao
+
+                        escreval(nome[i])
+                        
+                     fimse
+                     
+                 fimpara
+                
+              fimse
+            
+       fimpara
+
+Fimalgoritmo
